@@ -2,7 +2,7 @@ package aula01;
 
 import java.text.DecimalFormat;
 
-public class CalculaMedia {
+public class CalculaMediaPE {
 	public static void main(String[] args) {
 		String nomeAluno1 = "Paulo";
 		double nota1Aluno1 = 8.0;
