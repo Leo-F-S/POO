@@ -1,4 +1,4 @@
-package aula3.salaaula.copy;
+package aula03.salaaula;
 
 public class TestaQuadrado {
 
