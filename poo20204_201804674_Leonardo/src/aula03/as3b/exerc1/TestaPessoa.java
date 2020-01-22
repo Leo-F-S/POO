@@ -1,23 +1,20 @@
 package aula03.as3b.exerc1;
 
-import java.util.Date;
-import java.util.Scanner;
-import java.util.Calendar;
-
 public class TestaPessoa {
 
 	public static void main(String[] args) {
 		
-		Scanner sc = new Scanner(System.in);
-		
 		Pessoa p1 = new Pessoa();
 		p1.setNome("Leonardo");
-		p1.setDataNascimento(new Date());
+		p1.setNascimento("14/12/1997");
+		p1.setAno(1997);
 		p1.setAltura(1.82);
+		p1.calculaIdade();
 		
 		System.out.println("Dados da pessoa p1:");
 		System.out.println("Nome: " + p1.getNome());
-		System.out.println("Data Nascimento: " + p1.getDataNascimento());
+		System.out.println("Idade: " + p1.calculaIdade());
+		System.out.println("Data Nascimento: " + p1.getNascimento());
 		System.out.println("Altura: " + p1.getAltura());
 	}
 

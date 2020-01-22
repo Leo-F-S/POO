@@ -1,23 +1,30 @@
 package aula03.as3b.exerc1;
 
-import java.util.Date;
+import java.util.Calendar;
 
 public class Pessoa {
 	private String nome;
-	private Date dataNascimento;
+	private String nascimento;
 	private double altura;
+	private int ano;
 	
+	public int getAno() {
+		return ano;
+	}
+	public void setAno(int ano) {
+		this.ano = ano;
+	}
 	public String getNome() {
 		return nome;
 	}
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public Date getDataNascimento() {
-		return dataNascimento;
+	public String getNascimento() {
+		return nascimento;
 	}
-	public void setDataNascimento(Date dataNascimento) {
-		this.dataNascimento = dataNascimento;
+	public void setNascimento(String nascimento) {
+		this.nascimento = nascimento;
 	}
 	public double getAltura() {
 		return altura;
@@ -25,8 +32,9 @@ public class Pessoa {
 	public void setAltura(double altura) {
 		this.altura = altura;
 	}
-	
-	private int calculaIdade() {
-		return (1+1);
+	int anoAtual=(Calendar.getInstance().get(Calendar.YEAR));
+	public int calculaIdade() {
+		return (anoAtual-ano);
 	}
+	
 }

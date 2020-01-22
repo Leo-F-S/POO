@@ -1,4 +1,4 @@
-package aula04.salaaula;
+package aula04.salaaula.contabancaria;
 
 import java.util.List;
 
