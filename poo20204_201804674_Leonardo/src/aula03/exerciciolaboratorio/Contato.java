@@ -2,6 +2,7 @@ package aula03.exerciciolaboratorio;
 
 public class Contato {
 	private String nome;
+	private String contato;
 	public String getNome() {
 		return nome;
 	}
@@ -14,6 +15,5 @@ public class Contato {
 	public void setContato(String contato) {
 		this.contato = contato;
 	}
-	private String contato;
 }
 
