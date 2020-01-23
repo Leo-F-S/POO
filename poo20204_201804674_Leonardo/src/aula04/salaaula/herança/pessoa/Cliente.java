@@ -79,7 +79,6 @@ public class Cliente extends PessoaFisica{
 		StringBuffer sb = new StringBuffer();
 		sb.append(super.toString());
 		sb.append("\nRenda do Cliente: " + this.getRenda());
-		sb.append("\nInteresses do Cliente: " + this.getInteresses());
 		sb.append("\nProfissao do Cliente: " + this.getProfissao());
 		return sb.toString();
 	}

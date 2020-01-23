@@ -37,4 +37,12 @@ public class Pessoa {
 		return (anoAtual-ano);
 	}
 	
+	public String toString() {
+		StringBuffer sb = new StringBuffer();
+		sb.append("\nNome: " + this.getNome());
+		sb.append("\nData de Nascimento: " + this.getNascimento());
+		sb.append("\nIdade: " + calculaIdade());
+		sb.append("\nAltura: " + this.getNascimento());
+		return sb.toString();
+	}
 }

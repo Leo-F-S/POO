@@ -11,11 +11,7 @@ public class TestaPessoa {
 		p1.setAltura(1.82);
 		p1.calculaIdade();
 		
-		System.out.println("Dados da pessoa p1:");
-		System.out.println("Nome: " + p1.getNome());
-		System.out.println("Idade: " + p1.calculaIdade());
-		System.out.println("Data Nascimento: " + p1.getNascimento());
-		System.out.println("Altura: " + p1.getAltura());
+		System.out.println("Dados do Cliente: " + p1.toString());
 	}
 
 }
