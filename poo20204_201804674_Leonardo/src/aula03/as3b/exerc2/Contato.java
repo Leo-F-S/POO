@@ -1,10 +1,11 @@
-package aula03.as3b.exerc1;
+package aula03.as3b.exerc2;
 
+import java.util.List;
 import java.util.Calendar;
 
-public class Pessoa {
+public class Contato {
 	private String nome;
-	private String nascimento;
+	private int idade;
 	private double altura;
 	private int ano;
 	
@@ -20,11 +21,11 @@ public class Pessoa {
 	public void setNome(String nome) {
 		this.nome = nome;
 	}
-	public String getNascimento() {
-		return nascimento;
+	public int getIdade() {
+		return idade;
 	}
-	public void setNascimento(String nascimento) {
-		this.nascimento = nascimento;
+	public void setIdade(int idade) {
+		this.idade = idade;
 	}
 	public double getAltura() {
 		return altura;
@@ -32,6 +33,7 @@ public class Pessoa {
 	public void setAltura(double altura) {
 		this.altura = altura;
 	}
+	
 	int anoAtual=(Calendar.getInstance().get(Calendar.YEAR));
 	public int calculaIdade() {
 		return (anoAtual-ano);
@@ -40,7 +42,6 @@ public class Pessoa {
 	public String toString() {
 		StringBuffer sb = new StringBuffer();
 		sb.append("\nNome: " + this.getNome());
-		sb.append("\nData de Nascimento: " + this.getNascimento());
 		sb.append("\nIdade: " + calculaIdade());
 		sb.append("\nAltura: " + this.getAltura());
 		return sb.toString();
