@@ -1,13 +1,18 @@
 package aula03.as3b.exerc2;
 
-import java.util.List;
 import java.util.Calendar;
 
-public class Contato {
+public class Contato{
 	private String nome;
 	private int idade;
 	private double altura;
 	private int ano;
+	
+	public Contato(String n, int ano, double a) {
+		this.nome = n;
+		this.altura = a;
+		this.ano = ano;
+	}
 	
 	public int getAno() {
 		return ano;
