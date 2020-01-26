@@ -44,11 +44,6 @@ public class Contato{
 		return (anoAtual-ano);
 	}
 	
-	public String toString() {
-		StringBuffer sb = new StringBuffer();
-		sb.append("\nNome: " + this.getNome());
-		sb.append("\nIdade: " + calculaIdade());
-		sb.append("\nAltura: " + this.getAltura());
-		return sb.toString();
-	}
+
+	
 }
